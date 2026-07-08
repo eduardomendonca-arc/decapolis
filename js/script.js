@@ -412,7 +412,7 @@ function iniciarWhatsappFlutuante() {
 const redesSociaisConfig = [
     {
         nome: 'Facebook',
-        url: 'https://facebook.com/decapolisrestaurante',
+        url: 'https://m.facebook.com/bookmarks/',
         svg: '<svg viewBox="0 0 24 24"><path d="M13.5 21v-8.06h2.72l.4-3.16h-3.12V7.9c0-.91.26-1.53 1.57-1.53h1.67V3.55A22.4 22.4 0 0 0 14.35 3.4c-2.4 0-4.05 1.47-4.05 4.16v2.32H7.58v3.16h2.72V21h3.2z"/></svg>'
     },
     {
