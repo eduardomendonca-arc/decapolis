@@ -1,0 +1,627 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Decapolis</title>
+    <meta name="description" content="Explore o cardápio do Decapolis: pratos principais, sobremesas e bebidas preparados com ingredientes selecionados.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-interna">
+
+<header>
+    <nav>
+        <div class="logo">Decapolis</div>
+        <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html" class="ativo">Cardápio</a></li>
+            <li><a href="reserva.html">Reserva</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">
+            <br>
+               Sabores que Inspiram
+        </h2>
+
+        <div class="category-container">
+            <h3 class="category-title"> Explore uma seleção cuidadosamente preparada
+para oferecer uma experiência gastronómica única,
+com pratos, sobremesas e bebidas para todos os gostos.</h3>
+            <div class="menu-grid">
+                <div class="menu-item card animar delay-1">
+                    <div class="menu-item-img"><img src="../img/bitoque.jpg" alt="Bitoque" loading="lazy" decoding="async"></div>
+                    <h3>Bitoque</h3>
+                    <p>Arroz, ovo, bife, batata e salada fresca.</p>
+                    <span class="price">15.000 kz</span>
+
+                     <button class="btn-pedir" onclick="selecionarPrato('Bitoque', '15000')">
+                      Pedir agora
+                     </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Bitoque', 15000)">
+                      Pedir por encomenda
+                     </button>
+
+                     <div class="avaliacao" data-id="bitoque">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                </div>
+                <div class="menu-item card animar delay-2">
+                    <div class="menu-item-img"><img src="../img/caldeirada1.jpg" alt="Caldeirada" loading="lazy" decoding="async"></div>
+                    <h3>Caldeirada de Cabrito</h3>
+                    <p>Prato tradicional, suculento e rico em temperos.</p>
+                    <span class="price">12.000 kz</span>
+
+                      <button class="btn-pedir" onclick="selecionarPrato('Caldeirada', '12000')">
+                       Pedir agora
+                      </button>
+                      <button class="btn-encomenda"onclick="abrirEncomenda('Caldeirada', 12000)">
+                      Pedir por encomenda
+                     </button>
+
+                      <div class="avaliacao" data-id="caldeirada-de-cabrito">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+
+                </div>
+                <div class="menu-item card animar delay-3">
+                    <div class="menu-item-img"><img src="../img/bacalhau.jpg" alt="Bacalhau" loading="lazy" decoding="async"></div>
+                    <h3>Bacalhau com Natas</h3>
+                    <p>Receita cremosa, gratinada e cheia de sabor.</p>
+                    <span class="price">9.500 kz</span>
+
+                     <button class="btn-pedir" onclick="selecionarPrato('Bacalhau', '9500')">
+                      Pedir agora
+                      </button>
+                       <button class="btn-encomenda"onclick="abrirEncomenda('Bacalhau', 9500)">
+                      Pedir por encomenda
+                     </button>
+
+                      <div class="avaliacao" data-id="bacalhau-com-natas">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                </div>
+                <div class="menu-item card animar delay-1">
+                    <div class="menu-item-img"><img src="../img/massa.jpg"  alt="Massa Carbonara" loading="lazy" decoding="async"></div>
+                    <h3>Massa Carbonara</h3>
+                    <p>Um prato de massa carbonara que combina a culinária Italiana </p>
+                    <span class="price">10.000 KZ</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Massa', '10000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Massa', 10000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="massa-carbonara">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+
+                </div>
+
+            <div class="menu-item card animar delay-2">
+                    <div class="menu-item-img"><img src="../img/fejoada.jpg"  alt="Massa Carbonara" loading="lazy" decoding="async"></div>
+                    <h3>Feijoada</h3>
+                    <p>Um prato de Feijoada a moda Brasileira </p>
+                    <span class="price">10.000 KZ</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Feijoada', '10000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Feijoada', 10000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="feijoada">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+
+                </div>
+
+                <div class="menu-item card animar delay-3">
+                    <div class="menu-item-img"><img src="../img/caviar.jpg"  alt="Massa Carbonara" loading="lazy" decoding="async"></div>
+                    <h3>Caviar</h3>
+                    <p>Caviar a moda Brasileira </p>
+                    <span class="price">9.000 KZ</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Caviar', '9000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Caviar', 9000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="caviar">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="category-container">
+            <h3 class="category-title"> Sobremesas</h3>
+            <div class="menu-grid">
+                <div class="menu-item card animar delay-2">
+                    <div class="menu-item-img"><img src="../img/mousse1.jpg" alt="Mousse" loading="lazy" decoding="async"></div>
+                    <h3>Mousse de Maracujá</h3>
+                    <p>A clássica sobremesa refrescante de maracujá.</p>
+                    <span class="price">4.000 kz</span>
+
+                     <button class="btn-pedir" onclick="selecionarPrato('Mousse', '4000')">
+                      Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Mousse', 4000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="mousse-de-maracuja">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                </div>
+                <div class="menu-item card animar delay-3">
+                    <div class="menu-item-img"><img src="../img/petit.png" alt="Petit Gateau" loading="lazy" decoding="async"></div>
+                    <h3>Petit Gâteau</h3>
+                    <p>Bolinho quente de chocolate com sorvete de baunilha.</p>
+                    <span class="price">8.000 kz</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Petit Gâteau', '8000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Petit Gâteau', 8000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="petit-gateau">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+
+                </div>
+            <div class="menu-item card animar delay-1">
+                <div class="menu-item-img"><img src="../img/pudim.jpg" alt="Pudim de leite condensado" loading="lazy" decoding="async"></div>
+                <h3>Pudim de leite Condensado</h3>
+                <p>Pudim de leite Condensado lisinho</p>
+                <span class="price">5.000 kz</span>
+
+                 <button class="btn-pedir" onclick="selecionarPrato('Pudim', '5000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Pudim', 5000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="pudim-de-leite-condensado">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+             
+
+                  </div>
+                        <div class="menu-item card animar delay-2">
+                            <div class="menu-item-img"><img src="../img/bolo.jpg" alt="Bolo de chocolate" loading="lazy" decoding="async"></div>
+                            <h3>Bolo de chocolate</h3>
+                            <p> Bolo de chocolate com cobertura </p>
+                            <span class="price">5.000 kz</span>
+
+                            <button class="btn-pedir" onclick="selecionarPrato('Bolo de chocolate', '5000')">
+                             Pedir agora
+                            </button>
+                             <button class="btn-encomenda"onclick="abrirEncomenda('Bolo de chocolate', 5000)">
+                             Pedir por encomenda
+                            </button>
+
+                     <div class="avaliacao" data-id="bolo-de-chocolate">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                      </div>
+                       
+                      <div class="menu-item card animar delay-3">
+                            <div class="menu-item-img"><img src="../img/sorvete_sobremesa.png" alt="Sorvete" loading="lazy" decoding="async"></div>
+                            <h3>Sorvete</h3>
+                            <p> Sorvete casquinha, sorvete artesanal, sorvete premium </p>
+                            <span class="price">1.000 kz</span>
+
+                            <button class="btn-pedir" onclick="selecionarPrato('Sorvete', '1000')">
+                             Pedir agora
+                            </button>
+                             <button class="btn-encomenda"onclick="abrirEncomenda('Sorvete', 1000)">
+                             Pedir por encomenda
+                            </button>
+
+                            <div class="avaliacao" data-id="sorvete">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                      </div>
+
+                      <div class="menu-item card animar delay-3">
+                            <div class="menu-item-img"><img src="../img/gelatina-de-iogurte.jpg" alt="Sorvete" loading="lazy" decoding="async"></div>
+                            <h3>Gelatina</h3>
+                            <p> Gelatina de Iogurte </p>
+                            <span class="price">3.000 kz</span>
+
+                            <button class="btn-pedir" onclick="selecionarPrato('Gelatina', '3000')">
+                             Pedir agora
+                            </button>
+                             <button class="btn-encomenda"onclick="abrirEncomenda('Gelatina', 3000)">
+                             Pedir por encomenda
+                            </button>
+
+                            <div class="avaliacao" data-id="gelatina">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                      </div>
+                       </div>
+                       
+             </div>
+        </div>
+
+        <div class="category-container">
+            <h3 class="category-title"> Bebidas</h3>
+            <div class="menu-grid">
+                <div class="menu-item card animar delay-3">
+                    <div class="menu-item-img"><img src="../img/sumoananas.jpg" alt="Sumo" loading="lazy" decoding="async"></div>
+                    <h3>Sumo Natural de Ananás e hortelã</h3>
+                    <p>Feito na hora com ananás e hortelã.</p>
+                    <span class="price">5.500 kz</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Sumo Natural de Ananás', '5500')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Sumo Natural de Ananás', 5500)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="sumo-natural-de-ananas-e-hortela">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                </div>
+                <div class="menu-item card animar delay-1">
+                    <div class="menu-item-img"><img src="../img/coca.png" alt="Coca-cola" loading="lazy" decoding="async"></div>
+                    <h3>Refrigerante Coca-Cola</h3>
+                    <p>Gelada, ideal para acompanhar a sua refeição.</p>
+                    <span class="price">1.000 kz</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Coca-Cola', '1000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Coca-Cola', 1000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="refrigerante-coca-cola">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                </div>
+                <div class="menu-item card animar delay-2">
+                    <div class="menu-item-img"><img src="../img/fanta.jpg" alt="Fanta" loading="lazy" decoding="async"></div>
+                    <h3> Refrigerante Fanta de Laranja</h3>
+                    <p>Gelada, ideal para acompanhar a sua refeição</p>
+                    <span class="price">1.000 kz</span>
+
+                    <button class="btn-pedir" onclick="selecionarPrato('Refrigerante Fanta de Laranja', '1000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Refrigerante Fanta de Laranja', 1000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="refrigerante-fanta-de-laranja">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                </div>
+                 <div class="menu-item card animar delay-3">
+                      <div class="menu-item-img"><img src="../img/sprite.jpg" alt="Sprite" loading="lazy" decoding="async"></div>
+                       <h3>Refrigerante Sprite</h3>
+                       <P>Gelada, ideal para acompanhar a sua refeição</P>
+                       <span class="price">1.000 kz</span>
+
+                      <button class="btn-pedir" onclick="selecionarPrato('Refrigerante Sprite', '1000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Refrigerante Sprite', 1000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="refrigerante-sprite">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                     </div>
+
+
+                     <div class="menu-item card animar delay-3">
+                      <div class="menu-item-img"><img src="../img/vinho-portugues.png" alt="Sprite" loading="lazy" decoding="async"></div>
+                       <h3>Vinho</h3>
+                       <P>Vinho português</P>
+                       <span class="price">60.000 kz</span>
+
+                      <button class="btn-pedir" onclick="selecionarPrato('Vinho', '60000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Vinho', 60000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="vinho">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                     </div>
+
+                     <div class="menu-item card animar delay-3">
+                      <div class="menu-item-img"><img src="../img/sauza_bebida.jpg" alt="Sprite" loading="lazy" decoding="async"></div>
+                       <h3>Souza Whisky</h3>
+                       <P>Souza Whisky Americano </P>
+                       <span class="price">50.000 kz</span>
+
+                      <button class="btn-pedir" onclick="selecionarPrato('Sauza ', '50000')">
+                    Pedir agora
+                    </button>
+                     <button class="btn-encomenda"onclick="abrirEncomenda('Sauza', 50000)">
+                      Pedir por encomenda
+                     </button>
+
+                    <div class="avaliacao" data-id="souza-whisky">
+                     <span onclick="avaliar(this, 1)">★</span>
+                     <span onclick="avaliar(this, 2)">★</span>
+                     <span onclick="avaliar(this, 3)">★</span>
+                     <span onclick="avaliar(this, 4)">★</span>
+                     <span onclick="avaliar(this, 5)">★</span>
+                    </div>
+
+                     </div>
+
+                 </div>
+        </div>
+    </section>
+
+    <div id="pagamentoBox" class="pagamento-box">
+    <div class="pagamento-conteudo">
+        <h2 class="section-title" >
+            Resumo do Pedido
+        </h2>
+        <p id="resumoPedido"></p>
+
+        <button class="btn-pagar" onclick="pagar()">
+            Pagar com Express
+        </button>
+
+        <button class="btn-fechar" onclick="fecharPagamento()">
+            Cancelar
+        </button>
+    </div>
+</div>
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- SOBRE -->
+
+        <div class="footer-col">
+
+            <h3>Decapolis</h3>
+
+            <p>
+                Mais do que refeições,
+                criamos experiências gastronómicas
+                inesquecíveis para todos os momentos.
+            </p>
+
+        </div>
+
+        <!-- LINKS -->
+
+        <div class="footer-col">
+
+            <h4>Navegar</h4>
+
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="cardapio.html">Cardápio</a></li>
+
+                <li><a href="reserva.html">Reserva</a></li>
+
+                <li><a href="sobre.html">Sobre</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTACTOS -->
+
+        <div class="footer-col">
+
+            <h4>Contactos</h4>
+
+            <p>📞 +244 945 677 071</p>
+
+            <p>📧 contacto@decapolis.com</p>
+
+            <p>📍 Luanda, Angola</p>
+
+        </div>
+
+        <!-- HORÁRIO -->
+
+        <div class="footer-col">
+
+            <h4>Horário</h4>
+
+            <p>Segunda - Domingo</p>
+
+            <p>12h00 às 23h00</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            <br>
+            © 2026 Decapolis Restaurante.
+            Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<div class="footer-politica">
+    <a href="politica.html">Política de Privacidade</a>
+</div>
+
+
+
+    <div id="modalEncomenda" class="modal-encomenda">
+
+    <div class="modal-conteudo">
+
+        <h2 class="section-title" >
+            Pedido por Encomenda
+        </h2>
+
+        <input type="text"
+        id="clienteNome"
+        placeholder="Seu nome">
+
+        <input type="text"
+        id="clienteEndereco"
+        placeholder="Seu endereço">
+
+        <input type="number"
+        id="clienteQuantidade"
+        placeholder="Quantidade"
+        value="1"
+        oninput="atualizarResumo()">
+        
+        <div class="resumo-encomenda">
+
+    <p id="resumoPrato"></p>
+
+    <p id="resumoQuantidade"></p>
+
+    <p id="resumoEntrega"></p>
+
+    <h3 id="resumoTotal"></h3>
+
+</div>
+
+        <button onclick="enviarEncomendaWhats()">
+            Enviar via WhatsApp
+        </button>
+
+        <button onclick="fecharEncomenda()">
+            Cancelar
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+<script src="../js/script.js"></script>
+</body>
+</html>

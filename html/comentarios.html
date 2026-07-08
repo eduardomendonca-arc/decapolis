@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários | Decapolis</title>
+
+    <meta name="description" content="Veja o que os nossos clientes dizem sobre a experiência Decapolis e deixe também a sua avaliação.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comentarios.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-interna">
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">Decapolis</div>
+        <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reserva.html">Reserva</a></li>
+            <li><a href="comentarios.html" class="ativo">Comentários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="comentarios-hero">
+    <div class="hero-conteudo">
+        <span class="eyebrow">Testemunhos reais</span>
+        <h1>A Voz de Quem <em>Vive</em> o Decapolis</h1>
+        <div class="divisor-ouro"></div>
+        <p>
+            Cada avaliação conta uma história. Descubra o que os nossos clientes
+            sentem a cada visita — e deixe também a sua marca nesta experiência.
+        </p>
+    </div>
+</section>
+
+<!-- ESTATÍSTICAS (flutuam sobre o hero) -->
+<section class="estatisticas-wrapper">
+    <div class="estatisticas">
+        <div class="estatistica">
+            <div class="icone-estat">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L5.8 21l1.6-7L2 9.2l7.1-.6L12 2z" fill="currentColor"/></svg>
+            </div>
+            <h2 id="mediaEstrelas">5.0</h2>
+            <span class="estrelas-mini">★★★★★</span>
+            <p>Média das avaliações</p>
+        </div>
+
+        <div class="estatistica destaque">
+            <div class="icone-estat">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m5-4a4 4 0 100-8 4 4 0 000 8zm6 4a4 4 0 10-.5-7.97M6.5 12.03A4 4 0 106 4.06" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h2 id="totalComentarios">0</h2>
+            <p>Avaliações publicadas</p>
+        </div>
+
+        <div class="estatistica">
+            <div class="icone-estat">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h2 id="taxaRecomendacao">100%</h2>
+            <p>Recomendam o Decapolis</p>
+        </div>
+    </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="formulario-comentario">
+    <div class="painel-formulario">
+
+        <div class="painel-lado">
+            <span class="eyebrow eyebrow-clara">Partilhe a sua experiência</span>
+            <h2>A sua opinião <br>tem valor para nós.</h2>
+            <p class="painel-texto">
+                Cada palavra ajuda-nos a manter o padrão de excelência que
+                define o Decapolis, e ajuda outros a escolher com confiança.
+            </p>
+            <blockquote>
+                “A hospitalidade genuína transforma uma refeição
+                numa memória.”
+            </blockquote>
+        </div>
+
+        <div class="card-formulario">
+            <h3>Deixe a sua Avaliação</h3>
+
+            <div class="campo">
+                <input type="text" id="nome" placeholder=" " maxlength="60">
+                <label for="nome">Nome completo</label>
+                <span class="erro" id="erroNome">Por favor, indique o seu nome.</span>
+            </div>
+
+            <div class="bloco-avaliacao">
+                <span class="rotulo-campo">A sua classificação</span>
+                <div class="avaliacao">
+                    <span class="estrela" data-value="1">★</span>
+                    <span class="estrela" data-value="2">★</span>
+                    <span class="estrela" data-value="3">★</span>
+                    <span class="estrela" data-value="4">★</span>
+                    <span class="estrela" data-value="5">★</span>
+                </div>
+                <span class="rotulo-nota" id="rotuloNota">Excelente</span>
+            </div>
+
+            <div class="campo">
+                <textarea id="comentario" rows="5" maxlength="500" placeholder=" "></textarea>
+                <label for="comentario">Conte-nos como foi a sua experiência</label>
+                <span class="contador"><span id="contadorAtual">0</span>/500</span>
+                <span class="erro" id="erroComentario">Escreva um comentário antes de publicar.</span>
+            </div>
+
+            <button class="btn-publicar" onclick="guardarComentario()">
+                <span>Publicar Avaliação</span>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <p class="confirmacao" id="mensagemSucesso">✓ Obrigado! A sua avaliação foi publicada.</p>
+        </div>
+    </div>
+</section>
+
+<!-- LISTA -->
+<section class="lista-comentarios">
+    <div class="lista-cabecalho">
+        <div>
+            <span class="eyebrow">Comunidade Decapolis</span>
+            <h2>O Que Dizem os Nossos Clientes</h2>
+        </div>
+
+        <div class="controlos">
+            <div class="filtros" id="filtros">
+                <button class="filtro ativo" data-filtro="todos">Todas</button>
+                <button class="filtro" data-filtro="5">5★</button>
+                <button class="filtro" data-filtro="4">4★</button>
+                <button class="filtro" data-filtro="3">3★</button>
+                <button class="filtro" data-filtro="2">2★</button>
+                <button class="filtro" data-filtro="1">1★</button>
+            </div>
+
+            <select id="ordenacao" class="select-ordenar">
+                <option value="recentes">Mais recentes</option>
+                <option value="antigos">Mais antigos</option>
+                <option value="maior">Melhor avaliação</option>
+                <option value="menor">Pior avaliação</option>
+                <option value="util">Mais úteis</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="listaComentarios" class="grelha-comentarios"></div>
+
+    <div id="estadoVazio" class="estado-vazio" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" width="52" height="52"><path d="M21 11.5a8.5 8.5 0 01-12.36 7.58L3 20l1.08-4.55A8.5 8.5 0 1121 11.5z" stroke="currentColor" stroke-width="1.5"/></svg>
+        <h3 id="tituloVazio">Ainda não há avaliações</h3>
+        <p id="textoVazio">Seja a primeira pessoa a partilhar a sua experiência no Decapolis.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Decapolis</h3>
+            <p>
+                Mais do que refeições,
+                criamos experiências gastronómicas
+                inesquecíveis para todos os momentos.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegar</h4>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contactos</h4>
+            <p>📞 +244 945 677 071</p>
+            <p>📧 contacto@decapolis.com</p>
+            <p>📍 Luanda, Angola</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Horário</h4>
+            <p>Segunda - Domingo</p>
+            <p>12h00 às 23h00</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Decapolis Restaurante. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<div class="footer-politica">
+    <a href="politica.html">Política de Privacidade</a>
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/comentarios.js"></script>
+</body>
+</html>

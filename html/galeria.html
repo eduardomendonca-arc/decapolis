@@ -1,0 +1,388 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Decapolis</title>
+    <meta name="description" content="Galeria de fotos do Decapolis: pratos, sobremesas, bebidas e o ambiente do restaurante.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-interna">
+
+<header>
+    <nav>
+        <div class="logo">Decapolis</div>
+        <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reserva.html">Reserva</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html" class="ativo">Galeria</a></li>
+             <li><a href="faq.html">FAQ</a></li>
+             <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO GALERIA -->
+<section class="galeria-hero">
+    <div class="galeria-hero-overlay">
+        <span class="eyebrow eyebrow-clara centro">Coleção Visual</span>
+        <h1>A Galeria Decapolis</h1>
+        <p>Um convite aos sentidos — cada imagem é uma memória, cada prato uma pequena obra de arte servida com requinte.</p>
+    </div>
+</section>
+
+<section class="galeria-section">
+
+    <!-- FILTROS -->
+    <div class="galeria-filtros">
+        <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="pratos">Pratos Principais</button>
+        <button class="filtro-btn" data-filtro="sobremesas">Sobremesas</button>
+        <button class="filtro-btn" data-filtro="bebidas">Bebidas</button>
+        <button class="filtro-btn" data-filtro="ambiente">Ambiente</button>
+    </div>
+
+    <!-- MOSAICO -->
+    <div class="galeria-masonry" id="galeriaMasonry">
+
+        <!-- Pratos Principais -->
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/bitoque.jpg" alt="Bitoque à Decapolis" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Bitoque à Decapolis</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/bacalhau.jpg" alt="Bacalhau com Natas" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Bacalhau com Natas</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/caldeirada1.jpg" alt="Caldeirada de Peixe" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Caldeirada de Peixe</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/massa.jpg" alt="Carbonara Artesanal" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Carbonara Artesanal</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/picanha.jpg" alt="Picanha Grelhada" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Picanha Grelhada</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/fejoada.jpg" alt="Feijoada Tradicional" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Feijoada Tradicional</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/rissois.jpg" alt="Rissóis de Camarão" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Rissóis de Camarão</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="pratos">
+            <img src="../img/caviar.jpg" alt="Seleção de Caviar" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Pratos Principais</span>
+                <span class="galeria-item-nome">Seleção de Caviar</span>
+            </figcaption>
+        </figure>
+
+        <!-- Sobremesas -->
+        <figure class="galeria-item animar" data-categoria="sobremesas">
+            <img src="../img/mousse1.jpg" alt="Mousse de Chocolate" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Sobremesas</span>
+                <span class="galeria-item-nome">Mousse de Chocolate</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="sobremesas">
+            <img src="../img/petit.png" alt="Petit Gâteau" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Sobremesas</span>
+                <span class="galeria-item-nome">Petit Gâteau</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="sobremesas">
+            <img src="../img/pudim.jpg" alt="Pudim da Casa" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Sobremesas</span>
+                <span class="galeria-item-nome">Pudim da Casa</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="sobremesas">
+            <img src="../img/bolo.jpg" alt="Bolo Artesanal" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Sobremesas</span>
+                <span class="galeria-item-nome">Bolo Artesanal</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="sobremesas">
+            <img src="../img/gelatina-de-iogurte.jpg" alt="Gelatina de Iogurte" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Sobremesas</span>
+                <span class="galeria-item-nome">Gelatina de Iogurte</span>
+            </figcaption>
+        </figure>
+
+        <!-- Bebidas -->
+        <figure class="galeria-item animar" data-categoria="bebidas">
+            <img src="../img/vinho-portugues.png" alt="Vinho Português" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Bebidas</span>
+                <span class="galeria-item-nome">Vinho Português</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="bebidas">
+            <img src="../img/sumoananas.jpg" alt="Sumo de Ananás" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Bebidas</span>
+                <span class="galeria-item-nome">Sumo de Ananás</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="bebidas">
+            <img src="../img/coca.png" alt="Coca-Cola" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Bebidas</span>
+                <span class="galeria-item-nome">Coca-Cola</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="bebidas">
+            <img src="../img/fanta.jpg" alt="Fanta" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Bebidas</span>
+                <span class="galeria-item-nome">Fanta</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="bebidas">
+            <img src="../img/sprite.jpg" alt="Sprite" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Bebidas</span>
+                <span class="galeria-item-nome">Sprite</span>
+            </figcaption>
+        </figure>
+
+        <!-- Ambiente -->
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/sala-vip1.png" alt="Sala VIP" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Sala VIP</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/eventos.png" alt="Espaço para Eventos" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Espaço para Eventos</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/zona-para-criancas.png" alt="Zona para Crianças" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Zona para Crianças</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/restaurante11.jpg" alt="Sala Principal" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Sala Principal</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/restaurante12.jpg" alt="Ambiente Elegante" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Ambiente Elegante</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/restaurante13.jpg" alt="Terraço Decapolis" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Terraço Decapolis</span>
+            </figcaption>
+        </figure>
+
+        <figure class="galeria-item animar" data-categoria="ambiente">
+            <img src="../img/restaurante15.jpg" alt="Detalhe do Ambiente" loading="lazy" decoding="async">
+            <div class="galeria-item-zoom">&#43;</div>
+            <figcaption>
+                <span class="galeria-item-categoria">Ambiente</span>
+                <span class="galeria-item-nome">Detalhe do Ambiente</span>
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-fechar" aria-label="Fechar">&times;</button>
+    <button class="lightbox-seta lightbox-anterior" aria-label="Imagem anterior">&#10094;</button>
+    <figure class="lightbox-conteudo">
+        <img id="lightboxImg" src="" alt="">
+        <figcaption id="lightboxLegenda"></figcaption>
+    </figure>
+    <button class="lightbox-seta lightbox-proximo" aria-label="Próxima imagem">&#10095;</button>
+</div>
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- SOBRE -->
+
+        <div class="footer-col">
+
+            <h3>Decapolis</h3>
+
+            <p>
+                Mais do que refeições,
+                criamos experiências gastronómicas
+                inesquecíveis para todos os momentos.
+            </p>
+
+        </div>
+
+        <!-- LINKS -->
+
+        <div class="footer-col">
+
+             <h4>Navegar</h4>
+
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="cardapio.html">Cardápio</a></li>
+
+                <li><a href="reserva.html">Reserva</a></li>
+
+                <li><a href="sobre.html">Sobre</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTACTOS -->
+
+        <div class="footer-col">
+
+            <h4>Contactos</h4>
+
+            <p>📞 +244 945 677 071</p>
+
+            <p>📧 contacto@decapolis.com</p>
+
+            <p>📍 Luanda, Angola</p>
+
+        </div>
+
+        <!-- HORÁRIO -->
+
+        <div class="footer-col">
+
+            <h4>Horário</h4>
+
+            <p>Segunda - Domingo</p>
+
+            <p>12h00 às 23h00</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            <br>
+            © 2026 Decapolis Restaurante.
+            Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<div class="footer-politica">
+    <a href="politica.html">Política de Privacidade</a>
+</div>
+
+
+
+
+<script src="../js/script.js"></script>
+</body>
+</html>

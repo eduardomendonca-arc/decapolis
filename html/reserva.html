@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva | Decapolis</title>
+    <meta name="description" content="Reserve a sua mesa no Decapolis, o restaurante de referência em Luanda, Angola.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-interna">
+
+<header>
+    <nav>
+        <div class="logo">Decapolis</div>
+        <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reserva.html" class="ativo">Reserva</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+             <li><a href="faq.html">FAQ</a></li>
+             <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+ <section id="reserva" class="reserva-section">
+        <div class="reserva-container animar">
+            <div class="reserva-info">
+                <h2>Garanta a Sua Experiência</h2>
+                <p>Reserve antecipadamente e desfrute de um atendimento personalizado
+num ambiente pensado para criar momentos inesquecíveis.</p>
+                <div class="info-detalhes">
+                    <p><strong>⏰ Horário:</strong> Todos os dias, 12h - 23h</p>
+                    <p><strong>📞 Contato:</strong> +244 945 677 071</p>
+                    <p><strong>📍 Localização:</strong> Luanda, Angola</p>
+                </div>
+                
+                  <div class="mapa">
+                  <iframe src="https://www.google.com/maps?q=Luanda,Angola&output=embed"
+                   width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                  </iframe>
+                  </div>
+
+
+                <!-- mapa local -->
+                <!--div class="mapa-local">
+                 <img src="../img/mapa-luanda.png"
+                 alt="Mapa do Restaurante">
+                 </div !-->
+                
+            </div>
+            <div class="reserva-form">
+                <form id="formReserva">
+                    <div class="input-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Ex: João Silva" required>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Data</label>
+                            <input type="date" id="data" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Pessoas</label>
+                            <input type="number" id="pessoas" min="1" max="20" value="2" required>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-enviar-whats" onclick="enviarWhatsApp()">
+                        Solicitar via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+     
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- SOBRE -->
+
+        <div class="footer-col">
+
+            <h3>Decapolis</h3>
+
+            <p>
+                Mais do que refeições,
+                criamos experiências gastronómicas
+                inesquecíveis para todos os momentos.
+            </p>
+
+        </div>
+
+        <!-- LINKS -->
+
+        <div class="footer-col">
+
+             <h4>Navegar</h4>
+
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="cardapio.html">Cardápio</a></li>
+
+                <li><a href="reserva.html">Reserva</a></li>
+
+                <li><a href="sobre.html">Sobre</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTACTOS -->
+
+        <div class="footer-col">
+
+            <h4>Contactos</h4>
+
+            <p>📞 +244 945 677 071</p>
+
+            <p>📧 contacto@decapolis.com</p>
+
+            <p>📍 Luanda, Angola</p>
+
+        </div>
+
+        <!-- HORÁRIO -->
+
+        <div class="footer-col">
+
+            <h4>Horário</h4>
+
+            <p>Segunda - Domingo</p>
+
+            <p>12h00 às 23h00</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            <br>
+            © 2026 Decapolis Restaurante.
+            Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<div class="footer-politica">
+    <a href="politica.html">Política de Privacidade</a>
+</div>
+
+    
+
+<script src="../js/script.js"></script>
+</body>
+</html>
